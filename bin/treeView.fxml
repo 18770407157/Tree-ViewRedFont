@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="698.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Demo3">
+   <children>
+      <MenuBar prefHeight="32.0" prefWidth="1117.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea fx:id="ta1" layoutX="345.0" layoutY="55.0" prefHeight="587.0" prefWidth="375.0" />
+      <Button fx:id="bt1" layoutX="44.0" layoutY="651.0" mnemonicParsing="false" onAction="#selectButton1" text="打开txt" />
+      <Button fx:id="bt2" layoutX="208.0" layoutY="651.0" mnemonicParsing="false" onAction="#selectButton2" text="打开xml" />
+      <Button fx:id="bt3" layoutX="365.0" layoutY="651.0" mnemonicParsing="false" onAction="#saveTxt" text=".txt保存" />
+      <Button fx:id="bt4" layoutX="520.0" layoutY="651.0" mnemonicParsing="false" text=".xml保存" />
+      <Button fx:id="bt5" layoutX="686.0" layoutY="651.0" mnemonicParsing="false" text="确认修改" />
+      <TextArea fx:id="ta2" layoutX="719.0" layoutY="55.0" prefHeight="587.0" prefWidth="398.0" />
+      <Label layoutY="32.0" text="xml显示框" />
+      <Label layoutX="314.0" layoutY="32.0" text="txt编辑框" />
+      <Label layoutX="719.0" layoutY="32.0" text="xml编辑框" />
+      <TreeView fx:id="tv1" layoutY="56.0" prefHeight="587.0" prefWidth="345.0" />
+   </children>
+</AnchorPane>
